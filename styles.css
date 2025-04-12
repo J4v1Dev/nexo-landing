@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+body {
+    margin: 0;
+    font-family: Lato;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-container {
+    width: 100%;
+    height: 70px;
+    background-color: #89A8B2;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-items-container {
+    height: 100%;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-brand-container {
+    height: 100%;
+    width: fit-content;
+}
+
+.nav-brand-container img {
+    height: 100%;
+    width: 160px;
+}
+
+.nav-login-buttoms-container {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-button {
+    height: 50%;
+    width: 150px;
+    background-color: #B3C8CF;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.nav-button:hover {
+    background-color: #94bfce;
+}
+
+.nav-button a {
+    /* color: #4c3730; */
+    color: black;
+    font-weight: bold;
+}
+
+.main-container {
+    width: 65%;
+    height: 2000px;
+    background-color: chocolate;
+    margin: 0 auto;
+}
