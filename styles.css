@@ -66,10 +66,3 @@ a {
     color: black;
     font-weight: bold;
 }
-
-.main-container {
-    width: 65%;
-    height: 2000px;
-    background-color: chocolate;
-    margin: 0 auto;
-}
