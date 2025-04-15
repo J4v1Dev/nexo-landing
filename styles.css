@@ -110,3 +110,44 @@ a {
     position: relative;
     z-index: -1;
 }
+
+.start1-container {
+    width: 100%;
+    height: 200px;
+    background-color: #F1F0E8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.start1-container .start1-free-container{
+    width: fit-content;
+    height: 80px;
+    background-color: #B3C8CF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 7px;
+
+    & p{
+        color: #ffff;
+    }
+}
+
+.start1-container .start1-price-container{
+    width: fit-content;
+    height: 80px;
+    background-color: #B3C8CF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 7px;
+
+
+}
+
