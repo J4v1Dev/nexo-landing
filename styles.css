@@ -131,10 +131,7 @@ a {
     padding-left: 30px;
     padding-right: 30px;
     border-radius: 7px;
-
-    & p{
-        color: #ffff;
-    }
+    cursor: pointer;
 }
 
 .start1-container .start1-price-container{
@@ -147,7 +144,13 @@ a {
     padding-left: 30px;
     padding-right: 30px;
     border-radius: 7px;
-
-
+    cursor: pointer;
 }
 
+.start1-container .start1-price-container:hover{
+    background-color: #afd6e3;
+}
+
+.start1-container .start1-free-container:hover{
+    background-color: #afd6e3;
+}
