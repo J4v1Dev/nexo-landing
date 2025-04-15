@@ -137,7 +137,8 @@ a {
 .start1-container .start1-price-container{
     width: fit-content;
     height: 80px;
-    background-color: #B3C8CF;
+    background-color: #F1F0E8;
+    border: 2px solid #B3C8CF;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -148,9 +149,54 @@ a {
 }
 
 .start1-container .start1-price-container:hover{
-    background-color: #afd6e3;
+    background-color: #b0deeb;
 }
 
 .start1-container .start1-free-container:hover{
-    background-color: #afd6e3;
+    background-color: #b0deeb;
+}
+
+.start2-container {
+    width: 100%;
+    height: 200px;
+    background-color: #F1F0E8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.start2-container .start2-free-container{
+    width: fit-content;
+    height: 80px;
+    background-color: #B3C8CF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.start2-container .start2-price-container{
+    width: fit-content;
+    height: 80px;
+    background-color: #F1F0E8;
+    border: 2px solid #B3C8CF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.start2-container .start2-price-container:hover{
+    background-color: #b0deeb;
+}
+
+.start2-container .start2-free-container:hover{
+    background-color: #b0deeb;
 }
