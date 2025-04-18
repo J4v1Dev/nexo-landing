@@ -200,3 +200,28 @@ a {
 .start2-container .start2-free-container:hover{
     background-color: #b0deeb;
 }
+
+.faq-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 100%;
+    background-color: #F1F0E8;
+    gap: 2rem;
+}
+
+.faq-container .faq-buttons-container{
+    width: 30%;
+    height: 50%;
+    background-color: green;
+}
+
+.faq-container .faq-answers-container{
+    width: 30%;
+    height: 50%;
+    background-color: yellow;
+}
+
+
+
