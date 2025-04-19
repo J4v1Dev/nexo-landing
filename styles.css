@@ -137,7 +137,6 @@ a {
 .start1-container .start1-price-container{
     width: fit-content;
     height: 80px;
-    background-color: #F1F0E8;
     border: 2px solid #B3C8CF;
     display: flex;
     align-items: center;
@@ -182,7 +181,6 @@ a {
 .start2-container .start2-price-container{
     width: fit-content;
     height: 80px;
-    background-color: #F1F0E8;
     border: 2px solid #B3C8CF;
     display: flex;
     align-items: center;
@@ -285,6 +283,7 @@ a {
     border-radius: 10px;
     border: 3px solid #b9ccd1;
 }
+
 .pricing-container .p2{
     width: 20%;
     height: fit-content;
@@ -292,6 +291,7 @@ a {
     padding-inline: 10px;
     border-radius: 10px;
 }
+
 .pricing-container .p3{
     width: 20%;
     height: fit-content;
@@ -299,7 +299,4 @@ a {
     border-radius: 10px;
     border: 3px solid #b9ccd1;
 }
-
-
-
 
