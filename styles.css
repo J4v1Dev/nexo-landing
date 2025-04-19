@@ -212,15 +212,58 @@ a {
 }
 
 .faq-container .faq-buttons-container{
-    width: 30%;
-    height: 50%;
-    background-color: green;
+    width: 25%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+    & h1{
+        margin-top: 0;
+    }
+}
+
+.faq-container .faq-buttons-container .q1{
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    box-shadow: 3px 3px 3px #000;
+}
+
+.faq-container .faq-buttons-container .q2{
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    background-color: #B3C8CF;
+    border-radius: 10px;
+}
+
+.faq-container .faq-buttons-container .q3{
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    background-color: #B3C8CF;
+    border-radius: 10px;
 }
 
 .faq-container .faq-answers-container{
-    width: 30%;
-    height: 50%;
-    background-color: yellow;
+    width: 25%;
+    height: 40%;
+    background-color: #ffff;
+    overflow-y: hidden;
+    scroll-behavior: auto;
+    border-radius: 10px;
+    border: 1px solid #000;
+    box-shadow: 5px 5px 10px #000;
+
+    & img{
+        width: 100%;
+        height: 100%;
+    }
 }
 
 
