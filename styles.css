@@ -268,5 +268,40 @@ a {
     }
 }
 
+.pricing-container{
+    width: 100%;
+    height: 600px;
+    background-color: #F1F0E8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.pricing-container .p1{
+    width: fit-content;
+    height: fit-content;
+    background-color: #b9ccd1;
+    padding-inline: 10px;
+    margin-left: 200px;
+    border-radius: 10px;
+}
+.pricing-container .p2{
+    width: fit-content;
+    height: fit-content;
+    background-color: #b9ccd1;
+    padding-inline: 10px;
+    border-radius: 10px;
+}
+.pricing-container .p3{
+    width: fit-content;
+    height: fit-content;
+    background-color: #b9ccd1;
+    padding-inline: 10px;
+    margin-right: 200px;
+    border-radius: 10px;
+}
+
+
 
 
