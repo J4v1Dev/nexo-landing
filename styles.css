@@ -279,27 +279,25 @@ a {
 }
 
 .pricing-container .p1{
-    width: fit-content;
+    width: 20%;
     height: fit-content;
-    background-color: #b9ccd1;
     padding-inline: 10px;
-    margin-left: 200px;
     border-radius: 10px;
+    border: 3px solid #b9ccd1;
 }
 .pricing-container .p2{
-    width: fit-content;
+    width: 20%;
     height: fit-content;
     background-color: #b9ccd1;
     padding-inline: 10px;
     border-radius: 10px;
 }
 .pricing-container .p3{
-    width: fit-content;
+    width: 20%;
     height: fit-content;
-    background-color: #b9ccd1;
     padding-inline: 10px;
-    margin-right: 200px;
     border-radius: 10px;
+    border: 3px solid #b9ccd1;
 }
 
 
