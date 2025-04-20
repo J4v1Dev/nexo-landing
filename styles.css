@@ -392,3 +392,13 @@ a {
     justify-content: center;
     align-items: center;
 }
+
+.footer-container .logo{
+    height: 100%;
+    width: fit-content;
+    
+    & img{
+        height: 100%;
+        width: 160px;
+    }
+}
