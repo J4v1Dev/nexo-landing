@@ -380,7 +380,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    /*gap: 50px;*/
     color: #ffff;
 
     & a{
@@ -399,17 +399,59 @@ a {
 }
 
 .footer-container .about{
+    width: fit-content;
+    height: fit-content;
+    padding: 30px;
+    background-color: #94bfce;
 
+    & h4{
+        margin: 0;
+    }
 
     & p{
         font-size: 13px;
+        margin-bottom: 0;
     }
+
+}
+
+.footer-container .about:hover{
+    background-color: #fff2;
 }
 
 .footer-container .contact{
+    width: fit-content;
+    height: fit-content;
+    padding: 30px;
+    background-color: #94bfce;
 
+    & h4{
+        margin: 0;
+    }
 
     & p{
         font-size: 13px;
+        margin-bottom: 0;
     }
+
+}
+
+.footer-container .contact:hover{
+    background-color: #fff2;
+}
+
+.footer-container .social{
+    width: fit-content;
+    height: fit-content;
+    padding: 25px;
+
+    & h4{
+        margin-top: 0;
+    }
+}
+
+.footer-container .social .social-icons{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
