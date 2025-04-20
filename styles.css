@@ -389,7 +389,7 @@ a {
     height: 150px;
     background-color: #94bfce;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
