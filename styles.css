@@ -113,3 +113,102 @@ a {
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;    
 }
+
+.pricing-container{
+    width: 100%;
+    height: 600px;
+    /* background-color: #F1F0E8; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #4B164C;
+}
+
+.pricing-container .p1{
+    width: 20%;
+    height: fit-content;
+    padding-inline: 10px;
+    border-radius: 10px;
+    border: 3px solid #DD88CF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+     & .plan1{
+        width: fit-content;
+        height: fit-content;
+        border: 2px solid #DD88CF;
+        padding: 10px;
+        border-radius: 10px;
+
+        & a{
+            color: #4B164C;
+            font-weight: bold;
+        }
+     }
+}
+
+.pricing-container .p2{
+    width: 20%;
+    height: fit-content;
+    border: 3px solid #863187;
+    padding-inline: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & .vendido{
+        width: 100%;
+        height: 40px;
+        background-color: #4B164C;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom-left-radius: 100%;
+        border-bottom-right-radius: 100%;
+        & p{
+            color: white;
+            font-size: 25px;
+        }
+    }
+
+    & .plan2{
+        width: fit-content;
+        height: fit-content;
+        background-color: #4B164C;
+        padding: 10px;
+        border-radius: 10px;
+
+        & a{
+            color: white;
+            font-weight: bold;
+        }
+     }
+
+}
+
+.pricing-container .p3{
+    width: 20%;
+    height: fit-content;
+    padding-inline: 10px;
+    border-radius: 10px;
+    border: 3px solid #DD88CF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & .plan3{
+        width: fit-content;
+        height: fit-content;
+        border: 2px solid #DD88CF;
+        padding: 10px;
+        border-radius: 10px;
+
+        & a{
+            color: #4B164C;
+            font-weight: bold;
+        }
+     }
+}
