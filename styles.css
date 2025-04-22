@@ -165,6 +165,33 @@ a {
     background-color: #b0deeb;
 }
 
+.functionality1-container {
+    background-color: #F1F0E8;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    gap: 10px;
+    
+        & img {
+            box-shadow: 3px 3px 30px 3px #595959;
+            border-radius: 5px;
+        }
+}
+
+.functionality1TextContainer {
+    box-shadow: 3px 3px 30px 3px#595959;
+    padding: 5px;
+    border-radius: 10px;
+    height: 100px;
+    width: 350px;
+    background-color: transparent;
+
+    & p {
+        margin: 0px;
+    }
+}
+
 .start2-container {
     width: 100%;
     height: 200px;
