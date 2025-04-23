@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
-:root {
-    --display-func-1: block;
-    --display-func-2: none;
-    --display-func-3: none;
-}
-
 body {
     margin: 0;
     font-family: Lato;
@@ -167,16 +161,4 @@ a {
     width: 90%;
     background-color: khaki;
     display: none;
-}
-
-.functionality-viewer-button1:hover ~ .functionality-viewer-funcionality-container .functionality-viewer-functionality1 {
-    display: block;
-}
-
-.functionality-viewer-button2:hover ~ .functionality-viewer-funcionality-container .functionality-viewer-functionality2 {
-    display: block;
-}
-
-.functionality-viewer-button3:hover ~ .functionality-viewer-funcionality-container .functionality-viewer-functionality3 {
-    display: block;
 }
