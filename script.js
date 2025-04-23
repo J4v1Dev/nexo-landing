@@ -1,28 +1,15 @@
 
 /* Functionality viewer */
 
-const button1 = document.getElementById('functionality-viewer-button1');
-const button2 = document.getElementById('functionality-viewer-button2');
-const button3 = document.getElementById('functionality-viewer-button3');
+const buttons = document.querySelectorAll('.functionality-viewer-button');
+const functionalities = document.querySelectorAll('.functionality-viewer-functionality');
 
-const functionality1 = document.getElementById('functionality-viewer-functionality1');
-const functionality2 = document.getElementById('functionality-viewer-functionality2');
-const functionality3 = document.getElementById('functionality-viewer-functionality3');
+functionalities[0].style.display = 'block';
 
-button1.addEventListener('click', () => {
-    functionality1.style.display = 'block';
-    functionality2.style.display = 'none';
-    functionality3.style.display = 'none';
-});
-
-button2.addEventListener('click', () => {
-    functionality1.style.display = 'none';
-    functionality2.style.display = 'block';
-    functionality3.style.display = 'none';
-});
-
-button3.addEventListener('click', () => {
-    functionality1.style.display = 'none';
-    functionality2.style.display = 'none';
-    functionality3.style.display = 'block';
+buttons.forEach((button, index) => {
+    button.addEventListener('click', () => {
+        functionalities.forEach((func, funcIndex) => {
+            func.style.display = index === funcIndex ? 'block' : 'none';
+        });
+    });
 });
