@@ -113,3 +113,31 @@ a {
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;    
 }
+
+.functionality2-container {
+    background-color: #F5F5F5;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    gap: 10px;
+    flex-direction: row-reverse;
+    
+        & img {
+            box-shadow: 3px 3px 3px #595959;
+            border-radius: 5px;
+        }
+}
+
+.functionality2TextContainer {
+    box-shadow: 3px 3px 3px #595959;
+    padding: 5px;
+    border-radius: 10px;
+    height: 100px;
+    width: 350px;
+    background-color: transparent;
+
+    & p {
+        margin: 0px;
+    }
+}
