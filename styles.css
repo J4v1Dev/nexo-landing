@@ -130,6 +130,8 @@ a {
 }
 
 .functionality2TextContainer {
+    border: black solid 1px;
+    border-color: solid;
     box-shadow: 3px 3px 3px #595959;
     padding: 5px;
     border-radius: 10px;
