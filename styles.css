@@ -37,11 +37,20 @@ a {
 .nav-brand-container {
     height: 100%;
     width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+
+    & p{
+        margin-bottom: 8px;
+        color: white;
+    }
 }
 
 .nav-brand-container img {
     height: 100%;
-    width: 160px;
+    width: 100px;
+    transform: scaleX(-1);
 }
 
 .nav-login-buttoms-container {
