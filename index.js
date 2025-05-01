@@ -1,32 +1,32 @@
 const button1 = document.querySelector(".q1 button");
 const button2 = document.querySelector(".q2 button");
 const button3 = document.querySelector(".q3 button");
-const images = document.querySelectorAll(".faq-answers-container img");
+const answers = document.querySelectorAll(".faq-answers-container .faq-answer");
 
 // Funciones reutilizables
-const hideAllImages = () => { 
-  images.forEach((image) => {
-    image.classList.add("hidden");
+const hideAllAnswers = () => { 
+  answers.forEach((answer) => {
+    answer.classList.add("hidden");
   });  
 }
 
-const showImageFor = (id) => {
-  const image = document.querySelector(id);
-  image.classList.remove("hidden");
+const showAnswerFor = (id) => {
+  const answer = document.querySelector(id);
+  answer.classList.remove("hidden");
 }
 
 // Eventos
 button1.addEventListener("click", () => {
-  hideAllImages();
-  showImageFor("#q1");
-})
+  hideAllAnswers();
+  showAnswerFor("#q1");
+});
 
 button2.addEventListener("click", () => {
-  hideAllImages();
-  showImageFor("#q2");
+  hideAllAnswers();
+  showAnswerFor("#q2");
 });
 
 button3.addEventListener("click", () => {
-  hideAllImages();
-  showImageFor("#q3");
+  hideAllAnswers();
+  showAnswerFor("#q3");
 });
