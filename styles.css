@@ -527,6 +527,7 @@ button{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
     gap: 5px;
 }
 
@@ -540,9 +541,10 @@ button{
 }
 
 .functionality-viewer-button {
-    width: 100%;
+    width: 90%;
     height: 30%;
     background-color: firebrick;
+    border-radius: 20px;
 }
 
 .functionality-viewer-functionality {
