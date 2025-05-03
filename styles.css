@@ -513,17 +513,19 @@ button{
 .functionality-viewer-container-box {
     height: 300px; /*fit-content*/
     width: 60%;
-    background-color: darkgoldenrod;
+    background-color: #ffcbfa;
     display: flex;
     justify-content: space-between;
     gap: 5px;
     padding: 10px;
+    border: #4B164C solid;
+    border-radius: 10px;
 }
 
 .functionality-viewer-buttons-container {
     width: 50%;
     height: 100%;
-    background-color: lawngreen;
+    /* background-color: lawngreen; */
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -534,7 +536,7 @@ button{
 .functionality-viewer-funcionality-container {
     width: 50%;
     height: 100%;
-    background-color: lawngreen;
+    /* background-color: lawngreen; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -552,4 +554,9 @@ button{
     width: 90%;
     background-color: khaki;
     display: none;
+}
+
+.functionality-viewer-dividor {
+    border-left: 2px solid #4B164C;
+    height: 100%;
 }
