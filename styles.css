@@ -604,3 +604,73 @@ button{
         margin: 0px;
     }
 }
+
+/* Functionality viewer */
+
+.functionality-viewer-container {
+    display: flex;
+    justify-content: center;
+}
+
+.functionality-viewer-container-box {
+    height: 300px;
+    width: 60%;
+    background-color: #ffcbfa;
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    padding: 10px;
+    border: #4B164C solid;
+    border-radius: 10px;
+}
+
+.functionality-viewer-buttons-container {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5px;
+}
+
+.functionality-viewer-funcionality-container {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.functionality-viewer-button {
+    width: 90%;
+    height: 30%;
+    background-color: #dc6eca;
+    border-radius: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.functionality-viewer-button:hover {
+    background-color: #ffaff4;
+}
+
+.functionality-viewer-button p {
+    color: white;
+    font-weight: bold;
+    font-size: large;
+}
+
+.functionality-viewer-functionality {
+    height: 90%;
+    width: 90%;
+    background-color: khaki;
+    display: none;
+}
+
+.functionality-viewer-dividor {
+    border-left: 2px solid #4B164C;
+    height: 100%;
+}

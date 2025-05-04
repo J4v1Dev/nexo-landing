@@ -1,3 +1,21 @@
+/* Functionality viewer */
+
+const buttons = document.querySelectorAll('.functionality-viewer-button');
+const functionalities = document.querySelectorAll('.functionality-viewer-functionality');
+
+functionalities[0].style.display = 'block';
+
+buttons.forEach((button, index) => {
+    button.addEventListener('click', () => {
+        functionalities.forEach((func, funcIndex) => {
+            func.style.display = index === funcIndex ? 'block' : 'none';
+        });
+    });
+});
+
+
+/* Faq */
+
 const button1 = document.querySelector(".q1 button");
 const button2 = document.querySelector(".q2 button");
 const button3 = document.querySelector(".q3 button");
