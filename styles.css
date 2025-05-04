@@ -480,7 +480,8 @@ button{
 .footer-container .logo{
     height: 100%;
     width: fit-content;
-        
+    transform: scaleX(-1);
+    user-select: none;
     & img{
         height: 100%;
         width: 160px;
