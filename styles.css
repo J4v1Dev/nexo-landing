@@ -511,7 +511,7 @@ button{
 }
 
 .functionality-viewer-container-box {
-    height: 300px; /*fit-content*/
+    height: 300px;
     width: 60%;
     background-color: #ffcbfa;
     display: flex;
@@ -525,7 +525,6 @@ button{
 .functionality-viewer-buttons-container {
     width: 50%;
     height: 100%;
-    /* background-color: lawngreen; */
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -536,7 +535,6 @@ button{
 .functionality-viewer-funcionality-container {
     width: 50%;
     height: 100%;
-    /* background-color: lawngreen; */
     display: flex;
     align-items: center;
     justify-content: center;
