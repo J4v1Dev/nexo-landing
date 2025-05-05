@@ -88,30 +88,37 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 1%;
+    height: 130vh;
     width: 100%;
-    /* background-color: #F5F5F5; */
-    position: relative;
-    z-index: -2;
-    margin-top: 100px;
+    background-image: url('/public/images/Reunion.jpg');
     margin-bottom: 100px;
+    background-size: cover;
+    /* mask-image: linear-gradient(to bottom, white 80%, transparent); */
 }
 
 .info-text-container {
-    width: 350px;
-    height: fit-content;
-    /* background-color: #B3C8CF; */
-    background: linear-gradient(90deg, #ffaff4, transparent);
+    width: 100%;
+    height: 100%;
     margin: 0;
-    padding: 0;
-    transform: translateX(100px);
-    border-radius: 15px;
+    /* backdrop-filter: blur(5px); */
+    /* text-align: justify;
+    display: grid;
+    place-items: center; 
+    padding: 200px;
+
+    & p:nth-of-type(2){
+        margin-top: -400px;
+    }*/
 }
 
 .info-text-container p {
-    padding-left: 10px;
+    font-size: 40px;
+    margin: 0;
+    font-weight: bold;
+    color: #ffff;
+    text-shadow: 2px 2px 4px #000000;
 }
-
+/*
 .info-image-container {
     width: 500px;
     height: 80%;
@@ -127,16 +134,16 @@ a {
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;    
 }
-
+*/
 .start1-container {
     width: 100%;
-    height: 1%;
+    height: 10vh;
     /* background-color: #F1F0E8; */
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
-    margin-top: 100px;
+    /*margin-top: 100px;*/
     margin-bottom: 100px;
 }
 
