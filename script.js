@@ -13,6 +13,21 @@ buttons.forEach((button, index) => {
     });
 });
 
+/* Go up button */
+
+const goUpButton = document.querySelector('.goUpButton');
+
+const toggleGoUpButton = () => {
+  if (window.scrollY < 500) {
+    goUpButton.style.display = 'none';
+  } else {
+    goUpButton.style.display = 'block';
+  }
+};
+
+window.addEventListener('scroll', toggleGoUpButton);
+toggleGoUpButton();
+
 
 /* Faq */
 
