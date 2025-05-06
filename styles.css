@@ -654,7 +654,7 @@ button{
 
 .functionality-viewer-button:hover {
     background: linear-gradient(270deg, #ffff 97%, #4B164C 3%);
-    box-shadow: 3px 3px 3px #8a8a8a;
+    box-shadow: 3px 3px 3px #696969;
     transition: 0.3s;
 }
 
@@ -664,14 +664,26 @@ button{
     font-size: large;
 }
 
-.functionality-viewer-functionality {
-    height: 90%;
-    width: 90%;
-    background-color: khaki;
+ .functionality-viewer-functionality {
+    height: 95%;
+    width: 100%;
     display: none;
-}
+    border-radius: 50px 0 0 50px;
+    padding: 20px;
+    text-align: justify;
+    color: #4B164C;
+} 
 
 .functionality-viewer-dividor {
-    border-left: 2px solid #4b164c1f;
+    border-left: 2px solid #4b164c3b;
     height: 100%;
+    border-radius: 100%;
+    margin-right: 20px;
+}
+
+.functionality-viewer-funcionality-container {
+    width: 80%;
+    height: 100%;
+    background-image: linear-gradient(90deg, #ffff, transparent);
+    border-radius: 50px 0 0 50px;
 }
