@@ -678,7 +678,7 @@ button{
 /* Go up button */
 
 .goUpButton {
-    background-color: cyan;
+    background-color: #dc7fcc;
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -691,4 +691,9 @@ button{
     font-size: 25px;
     cursor: pointer;
     transition: opacity 0.3s ease;
+    border: #4B164C solid 1px;
+}
+
+.goUpButton:hover {
+    background-color: #ffcbfa;
 }
