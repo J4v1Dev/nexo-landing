@@ -683,6 +683,11 @@ button{
     bottom: 20px;
     right: 20px;
     z-index: 1000;
-    height: 100px;
-    width: 100px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    align-content: center;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
 }

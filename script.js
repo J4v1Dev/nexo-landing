@@ -28,6 +28,10 @@ const toggleGoUpButton = () => {
 window.addEventListener('scroll', toggleGoUpButton);
 toggleGoUpButton();
 
+function goUp() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
 
 /* Faq */
 
