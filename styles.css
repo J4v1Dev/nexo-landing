@@ -610,18 +610,17 @@ button{
 .functionality-viewer-container {
     display: flex;
     justify-content: center;
+    background-color: #ff77f1;
+    padding: 80px;
 }
 
 .functionality-viewer-container-box {
     height: 300px;
     width: 60%;
-    background-color: #ffcbfa;
     display: flex;
     justify-content: space-between;
-    gap: 5px;
+    gap: 20px;
     padding: 10px;
-    border: #4B164C solid;
-    border-radius: 10px;
 }
 
 .functionality-viewer-buttons-container {
@@ -645,7 +644,7 @@ button{
 .functionality-viewer-button {
     width: 90%;
     height: 30%;
-    background-color: #dc6eca;
+    background-color: #ffff;
     border-radius: 20px;
     cursor: pointer;
     display: flex;
@@ -654,11 +653,13 @@ button{
 }
 
 .functionality-viewer-button:hover {
-    background-color: #ffaff4;
+    background: linear-gradient(270deg, #ffff 97%, #4B164C 3%);
+    box-shadow: 3px 3px 3px #8a8a8a;
+    transition: 0.3s;
 }
 
 .functionality-viewer-button p {
-    color: white;
+    color: #4B164C;
     font-weight: bold;
     font-size: large;
 }
@@ -671,6 +672,6 @@ button{
 }
 
 .functionality-viewer-dividor {
-    border-left: 2px solid #4B164C;
+    border-left: 2px solid #4b164c1f;
     height: 100%;
 }
