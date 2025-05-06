@@ -18,11 +18,11 @@ buttons.forEach((button, index) => {
 const goUpButton = document.querySelector('.goUpButton');
 
 const toggleGoUpButton = () => {
-  if (window.scrollY < 500) {
-    goUpButton.style.display = 'none';
-  } else {
-    goUpButton.style.display = 'block';
-  }
+    if (window.scrollY < 500) {
+        goUpButton.style.display = 'none';
+    } else {
+        goUpButton.style.display = 'block';
+    }
 };
 
 window.addEventListener('scroll', toggleGoUpButton);
@@ -37,29 +37,29 @@ const button3 = document.querySelector(".q3 button");
 const answers = document.querySelectorAll(".faq-answers-container .faq-answer");
 
 // Funciones reutilizables
-const hideAllAnswers = () => { 
-  answers.forEach((answer) => {
-    answer.classList.add("hidden");
-  });  
+const hideAllAnswers = () => {
+    answers.forEach((answer) => {
+        answer.classList.add("hidden");
+    });
 }
 
 const showAnswerFor = (id) => {
-  const answer = document.querySelector(id);
-  answer.classList.remove("hidden");
+    const answer = document.querySelector(id);
+    answer.classList.remove("hidden");
 }
 
 // Eventos
 button1.addEventListener("click", () => {
-  hideAllAnswers();
-  showAnswerFor("#q1");
+    hideAllAnswers();
+    showAnswerFor("#q1");
 });
 
 button2.addEventListener("click", () => {
-  hideAllAnswers();
-  showAnswerFor("#q2");
+    hideAllAnswers();
+    showAnswerFor("#q2");
 });
 
 button3.addEventListener("click", () => {
-  hideAllAnswers();
-  showAnswerFor("#q3");
+    hideAllAnswers();
+    showAnswerFor("#q3");
 });
