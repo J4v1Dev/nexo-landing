@@ -17,11 +17,13 @@ buttons.forEach((button, index) => {
 
 const goUpButton = document.querySelector('.goUpButton');
 
-const toggleGoUpButton = () => {
+function toggleGoUpButton() {
     if (window.scrollY < 500) {
-        goUpButton.style.display = 'none';
+        goUpButton.style.opacity = '0';
+        goUpButton.style.pointerEvents = 'none';
     } else {
-        goUpButton.style.display = 'block';
+        goUpButton.style.opacity = '1';
+        goUpButton.style.pointerEvents = 'auto';
     }
 };
 

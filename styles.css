@@ -690,4 +690,5 @@ button{
     text-align: center;
     font-size: 25px;
     cursor: pointer;
+    transition: opacity 0.3s ease;
 }
