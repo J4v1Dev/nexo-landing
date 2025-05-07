@@ -364,6 +364,12 @@ button{
         margin-top: 0;
     }
 
+    & p:nth-of-type(2){
+        font-size: 18px;
+        text-align: justify;
+        margin: 20px;
+    }
+
     & h4{
         margin: 0;
     }
@@ -394,6 +400,12 @@ button{
 
     & p{
         margin-top: 0;
+    }
+
+    & p:nth-of-type(2){
+        font-size: 18px;
+        text-align: justify;
+        margin: 20px;
     }
 
     & h4{
@@ -442,6 +454,12 @@ button{
 
     & p{
         margin-top: 0;
+    }
+
+    & p:nth-of-type(2){
+        font-size: 18px;
+        text-align: justify;
+        margin: 20px;
     }
 
     & h4{
