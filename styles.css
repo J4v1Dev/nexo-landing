@@ -651,6 +651,11 @@ button{
     align-items: center;
 }
 
+.functionality-viewer-button.active{
+    background: linear-gradient(270deg, #ffff 97%, #a030a1 3%);
+    box-shadow: 3px 3px 3px #3b3b3b;
+}
+
 .functionality-viewer-button:hover {
     background: linear-gradient(270deg, #ffff 97%, #a030a1 3%);
     box-shadow: 3px 3px 3px #3b3b3b;
