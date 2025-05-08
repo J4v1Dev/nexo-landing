@@ -13,6 +13,27 @@ buttons.forEach((button, index) => {
     });
 });
 
+/* Go up button */
+
+const goUpButton = document.querySelector('.goUpButton');
+
+function toggleGoUpButton() {
+    if (window.scrollY < 500) {
+        goUpButton.style.opacity = '0';
+        goUpButton.style.pointerEvents = 'none';
+    } else {
+        goUpButton.style.opacity = '1';
+        goUpButton.style.pointerEvents = 'auto';
+    }
+};
+
+window.addEventListener('scroll', toggleGoUpButton);
+toggleGoUpButton();
+
+function goUp() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
 /* Functionality viewer - active class */
 buttons.forEach(button => {
     button.addEventListener('click', () => {
