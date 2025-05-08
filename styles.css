@@ -33,6 +33,7 @@ a {
     width: 70%;
     display: flex;
     justify-content: space-between;
+    user-select: none;
 }
 
 .nav-brand-container {
