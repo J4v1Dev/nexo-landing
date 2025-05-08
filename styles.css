@@ -334,6 +334,16 @@ button{
     color: #4B164C;
     margin-top: 100px;
     margin-bottom: 100px;
+
+    & .tics-list{
+        list-style: none;
+
+        & li::before{
+            content: "✓";
+            color: green;
+            margin-right: 5px;
+        }
+    }
 }
 
 .pricing-container .p1{
