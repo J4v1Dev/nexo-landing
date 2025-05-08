@@ -13,6 +13,13 @@ buttons.forEach((button, index) => {
     });
 });
 
+/* Functionality viewer - active class */
+buttons.forEach(button => {
+    button.addEventListener('click', () => {
+      buttons.forEach(b => b.classList.remove('active'));
+      button.classList.add('active');
+    });
+})
 
 /* Faq */
 
