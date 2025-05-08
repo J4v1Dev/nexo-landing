@@ -216,100 +216,42 @@ a {
     background-color: #ffb7f7;
 }
 
+/* FAQ */
+
 .faq-container {
     display: flex;
-    justify-content: center;
     align-items: center;
-    height: 400px;
-    width: 100%;
-    gap: 2rem;
-}
-
-.faq-container .faq-buttons-container{
-    width: 25%;
-    height: 60%;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-
-    & h1{
-        margin: 0;
-        color: #4B164C;
-    }
 }
 
-.faq-container .faq-buttons-container .q1{
-    width: fit-content;
-    height: fit-content;
-    padding: 10px;
-    border-radius: 10px;
-    border: 1px solid #4B164C;
-    box-shadow: 3px 3px 3px #595959;
-
-    & a{
-        color: #4B164C;
-        font-weight: bold;
-    }
+.faq-details {
+    width: 60%;
+    background-color: #b8b8b8;
+    padding: .5rem;
+    border-radius: 6px;
+    margin: .5rem;
 }
 
-.faq-container .faq-buttons-container .q2{
-    width: fit-content;
-    height: fit-content;
-    padding: 10px;
-    border: 1px solid #4B164C;
-    box-shadow: 3px 3px 3px #595959;
-    border-radius: 10px;
-
-    & a{
-        color: #4B164C;
-        font-weight: bold;
-    }
+.faq-details[open] .faq-summary::before {
+    content: '-';
 }
 
-.faq-container .faq-buttons-container .q3{
-    width: fit-content;
-    height: fit-content;
-    padding: 10px;
-    border: 1px solid #4B164C;
-    box-shadow: 3px 3px 3px #595959;
-    border-radius: 10px;
-
-    & a{
-        color: #4B164C;
-        font-weight: bold;
-    }
+.faq-divisory-line {
+    border-top: 2px solid #d8d8d8;
+    margin: .4rem 0;
 }
 
-.faq-container .faq-answers-container{
-    width: 25%;
-    height: 40%;
-    background-color: #ffff;
-    overflow-y: hidden;
-    scroll-behavior: auto;
-    border-radius: 10px;
-    border: 1px solid #4B164C;
-    box-shadow: 5px 5px 10px #595959;
-
-    & #q1{
-        color: #4B164C;
-        text-align: justify;
-        margin: 10px
-    }
-
-    & #q2{
-        color: #4B164C;
-        text-align: justify;
-        margin: 10px
-    }
-
-    & #q3{
-        color: #4B164C;
-        text-align: justify;
-        margin: 10px
-    }
+.faq-summary {
+    list-style: none;
+    cursor: pointer;
 }
+
+.faq-summary::before {
+    content: '+';
+    padding-right: 1rem;
+}
+
+/* End FAQ */
 
 .hidden{
     display: none;
