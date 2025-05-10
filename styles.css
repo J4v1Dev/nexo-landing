@@ -133,6 +133,7 @@ a {
     width: fit-content;
     height: 80px;
     background-color: #dc6eca;
+    border: 2px solid #DD88CF;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -181,6 +182,7 @@ a {
     width: fit-content;
     height: 80px;
     background-color: #dc6eca;
+    border: 2px solid #DD88CF;
     display: flex;
     align-items: center;
     justify-content: center;
