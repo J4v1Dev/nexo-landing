@@ -550,14 +550,14 @@ button{
     margin-bottom: 100px;
 }
 
-.functionality1TextContainer {
+.functionality1-text-container {
     height: 100%;
     width: 30%;
     text-align: justify;
     color: #4B164C;
 }
 
-.functionality1ImageContainer {
+.functionality1-image-container {
     width: 30%;
     height: 100%;
 
@@ -579,14 +579,14 @@ button{
     gap: 100px;
 }
 
-.functionality2TextContainer {
+.functionality2-text-container {
     height: 100%;
     width: 30%;
     text-align: justify;
     color: #4B164C;
 }
 
-.functionality2ImageContainer {
+.functionality2-image-container {
     width: 30%;
     height: 100%;
 
