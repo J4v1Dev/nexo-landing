@@ -576,6 +576,15 @@ button{
     width: 30%;
     text-align: justify;
     color: #4B164C;
+
+    & h1{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 40px;
+    }
+
+    & p{
+        font-size: 25px;
+    }
 }
 
 .functionality1-image-container {
@@ -598,6 +607,7 @@ button{
     justify-content: center;
     align-items: top;
     gap: 100px;
+    margin-bottom: 100px;
 }
 
 .functionality2-text-container {
@@ -605,6 +615,15 @@ button{
     width: 30%;
     text-align: justify;
     color: #4B164C;
+
+    & h1{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 40px;
+    }
+
+    & p{
+        font-size: 25px;
+    }
 }
 
 .functionality2-image-container {
