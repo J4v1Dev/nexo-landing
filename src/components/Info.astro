@@ -1,0 +1,54 @@
+---
+
+---
+
+<div class="info-container">
+    <div class="info-text-container">
+        <p>Empieza ahora y toma el control de tu tiempo.</p>
+        <p>
+            Nexo es la aplicación que te ayuda a organizar tu vida y tus tareas
+            de manera sencilla y efectiva.
+        </p>
+    </div>
+</div>
+
+<style>
+    .info-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 130vh;
+        width: 100%;
+        background-image: url("/images/meeting.jpg");
+        margin-bottom: 100px;
+        background-size: cover;
+        mask-image: linear-gradient(to bottom, white 80%, transparent);
+    }
+
+    .info-text-container {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        backdrop-filter: blur(5px);
+        text-align: center;
+        display: grid;
+        place-items: center;
+        padding: 200px;
+
+        & p:nth-of-type(2) {
+            margin-top: -400px;
+            font-size: 50px;
+            font-family: "Helvetica Neue", sans-serif;
+            font-weight: 100;
+        }
+    }
+
+    .info-text-container p {
+        font-size: 75px;
+        margin-top: -100px;
+        text-shadow: 2px 2px 4px #000000;
+        font-family: "Montserrat", sans-serif;
+        color: #ffffff;
+        font-weight: bold;
+    }
+</style>
