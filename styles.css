@@ -323,6 +323,17 @@ button{
         border: 2px solid #DD88CF;
         padding: 10px;
         border-radius: 10px;
+        cursor: pointer;
+
+        &:hover{
+            background-color: #4B164C;
+            border: 2px solid #4B164C;
+
+            & a{
+                color: white;
+                font-weight: bold;
+            }
+        }
 
         & a{
             color: #4B164C;
@@ -374,8 +385,21 @@ button{
         width: fit-content;
         height: fit-content;
         background-color: #4B164C;
+        border: 2px solid #4B164C;
         padding: 10px;
         border-radius: 10px;
+        cursor: pointer;
+
+        &:hover{
+            border: 2px solid #DD88CF;
+            background-color: transparent;
+            padding: 10px;
+
+            & a{
+                color: #4B164C;
+                font-weight: bold;
+            }
+        }
 
         & a{
             color: white;
@@ -415,6 +439,17 @@ button{
         border: 2px solid #DD88CF;
         padding: 10px;
         border-radius: 10px;
+        cursor: pointer;
+
+            &:hover{
+                background-color: #4B164C;
+                border: 2px solid #4B164C;
+
+                 & a{
+                    color: white;
+                    font-weight: bold;
+                }
+            }
 
         & a{
             color: #4B164C;
