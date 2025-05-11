@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
     margin: 0;
@@ -53,8 +54,6 @@ a {
 
 .nav-brand-container img {
     height: 100%;
-    width: 80px;
-    transform: scaleX(-1);
 }
 
 .nav-login-buttoms-container {
@@ -90,7 +89,7 @@ a {
     align-items: center;
     height: 130vh;
     width: 100%;
-    background-image: url('/public/images/Reunion.jpg');
+    background-image: url('/public/images/Meeting3.jpg');
     margin-bottom: 100px;
     background-size: cover;
     mask-image: linear-gradient(to bottom, white 80%, transparent); 
@@ -101,22 +100,26 @@ a {
     height: 100%;
     margin: 0;
     backdrop-filter: blur(5px);
-    text-align: justify;
+    text-align: center;
     display: grid;
     place-items: center; 
     padding: 200px;
 
     & p:nth-of-type(2){
         margin-top: -400px;
+        font-size: 50px;
+        font-family: 'Helvetica Neue', sans-serif;
+        font-weight:100;
     }
 }
 
 .info-text-container p {
-    font-size: 40px;
-    margin: 0;
-    font-weight: bold;
-    color: #ffff;
+    font-size: 75px;
+    margin-top: -100px;
     text-shadow: 2px 2px 4px #000000;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    font-weight: bold;
 }
 
 .start1-container {
@@ -222,14 +225,20 @@ a {
     display: flex;
     align-items: center;
     flex-direction: column;
+    font-size: 20px;
+
+    & h1 {
+        color: #4B164C;
+        font-weight: bold;
+        margin-bottom: 20px;
+        margin-top: 100px;
+        font-family: 'Montserrat', sans-serif;
+    }
 }
 
 .faq-details {
     width: 60%;
-    background-color: #b8b8b8;
     padding: .5rem;
-    border-radius: 6px;
-    margin: .5rem;
 }
 
 .faq-details[open] .faq-summary::before {
@@ -237,13 +246,21 @@ a {
 }
 
 .faq-divisory-line {
-    border-top: 2px solid #d8d8d8;
-    margin: .4rem 0;
+    border-top: 2px solid #b6b6b6;
+    margin: .2rem 0;
+    width: 95%;
+    margin-left: 2.5%;
+    border-radius: 100%;
 }
 
 .faq-summary {
     list-style: none;
     cursor: pointer;
+    background-color: #4B164C;
+    color: #ffff;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
 }
 
 .faq-summary::before {
@@ -251,6 +268,13 @@ a {
     padding-right: 1rem;
 }
 
+.faq-summary-content {
+    background-color: #fdd4f765;
+    padding: 10px;
+    border-radius: 10px;
+    width: 95%;
+    margin-left: 1.5%;
+}
 /* End FAQ */
 
 .hidden{
@@ -318,6 +342,17 @@ button{
         border: 2px solid #DD88CF;
         padding: 10px;
         border-radius: 10px;
+        cursor: pointer;
+
+        &:hover{
+            background-color: #4B164C;
+            border: 2px solid #4B164C;
+
+            & a{
+                color: white;
+                font-weight: bold;
+            }
+        }
 
         & a{
             color: #4B164C;
@@ -369,8 +404,21 @@ button{
         width: fit-content;
         height: fit-content;
         background-color: #4B164C;
+        border: 2px solid #4B164C;
         padding: 10px;
         border-radius: 10px;
+        cursor: pointer;
+
+        &:hover{
+            border: 2px solid #DD88CF;
+            background-color: transparent;
+            padding: 10px;
+
+            & a{
+                color: #4B164C;
+                font-weight: bold;
+            }
+        }
 
         & a{
             color: white;
@@ -410,6 +458,17 @@ button{
         border: 2px solid #DD88CF;
         padding: 10px;
         border-radius: 10px;
+        cursor: pointer;
+
+            &:hover{
+                background-color: #4B164C;
+                border: 2px solid #4B164C;
+
+                 & a{
+                    color: white;
+                    font-weight: bold;
+                }
+            }
 
         & a{
             color: #4B164C;
@@ -435,11 +494,10 @@ button{
 .footer-container .logo{
     height: 100%;
     width: fit-content;
-    transform: scaleX(-1);
     user-select: none;
     & img{
         height: 100%;
-        width: 160px;
+        width: 120px;
     }
 }
 
@@ -513,14 +571,23 @@ button{
     margin-bottom: 100px;
 }
 
-.functionality1TextContainer {
+.functionality1-text-container {
     height: 100%;
     width: 30%;
     text-align: justify;
     color: #4B164C;
+
+    & h1{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 40px;
+    }
+
+    & p{
+        font-size: 25px;
+    }
 }
 
-.functionality1ImageContainer {
+.functionality1-image-container {
     width: 30%;
     height: 100%;
 
@@ -540,16 +607,26 @@ button{
     justify-content: center;
     align-items: top;
     gap: 100px;
+    margin-bottom: 100px;
 }
 
-.functionality2TextContainer {
+.functionality2-text-container {
     height: 100%;
     width: 30%;
     text-align: justify;
     color: #4B164C;
+
+    & h1{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 40px;
+    }
+
+    & p{
+        font-size: 25px;
+    }
 }
 
-.functionality2ImageContainer {
+.functionality2-image-container {
     width: 30%;
     height: 100%;
 
