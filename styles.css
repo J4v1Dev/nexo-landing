@@ -177,7 +177,7 @@ a {
     justify-content: center;
     align-items: center;
     gap: 10px;
-    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .start2-container .start2-free-container{
@@ -298,7 +298,7 @@ button{
     align-items: center;
     gap: 10px;
     color: #4B164C;
-    margin-top: 100px;
+    margin-top: 200px;
     margin-bottom: 100px;
 
     & .tics-list{
@@ -644,7 +644,7 @@ button{
 .functionality-viewer-container {
     display: flex;
     justify-content: center;
-    padding: 200px 40px 200px 40px;
+    padding: 300px 40px 300px 40px;
     background-image: linear-gradient(#F5F5F5 0 10%, #f5f5f5c3 20% 80%, #F5F5F5 90% 100%), url('/public/images/Reunion2.jpg');
     background-size: cover;
     background-position: center;
