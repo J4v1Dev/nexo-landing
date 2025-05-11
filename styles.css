@@ -54,8 +54,6 @@ a {
 
 .nav-brand-container img {
     height: 100%;
-    width: 80px;
-    transform: scaleX(-1);
 }
 
 .nav-login-buttoms-container {
@@ -475,11 +473,10 @@ button{
 .footer-container .logo{
     height: 100%;
     width: fit-content;
-    transform: scaleX(-1);
     user-select: none;
     & img{
         height: 100%;
-        width: 160px;
+        width: 120px;
     }
 }
 
