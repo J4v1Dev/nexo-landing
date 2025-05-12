@@ -1,12 +1,27 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import NavBar from '../components/NavBar.astro';
-import Info from '../components/Info.astro'
-import StartButtons from '../components/StartButtons.astro';
+import Layout from "../layouts/Layout.astro";
+import NavBar from "../components/NavBar.astro";
+import Info from "../components/Info.astro";
+import StartButtons from "../components/StartButtons.astro";
+import FunctionalityPanel from "../components/FunctionalityPanel.astro";
 ---
 
 <Layout>
 	<NavBar />
 	<Info />
 	<StartButtons />
+	<FunctionalityPanel
+		title="La mejor caracteristica"
+		description="Te sorprenderá la funcionalidad de nuestro proyecto"
+		imageUrl="https://www.fundaciomaresme.cat/wp-content/uploads/2019/11/imagen-de-prueba-320x240.jpg"
+		altText="Imagen de la función número 1"
+		inverted={false}
+	/>
+	<FunctionalityPanel
+		title="La mejor caracteristica"
+		description="Te sorprenderá la funcionalidad de nuestro proyecto"
+		imageUrl="https://www.fundaciomaresme.cat/wp-content/uploads/2019/11/imagen-de-prueba-320x240.jpg"
+		altText="Imagen de la función número 1"
+		inverted={true}
+	/>
 </Layout>
