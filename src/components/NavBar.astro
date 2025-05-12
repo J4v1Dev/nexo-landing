@@ -2,20 +2,20 @@
 
 ---
 
-<div class="nav-placeholder"></div>
-<div class="nav-container">
-    <div class="nav-items-container">
+<div class="placeholder"></div>
+<div class="container">
+    <div class="items-container">
         <a href="/index.html">
-            <div class="nav-brand-container">
+            <div class="brand-container">
                 <img src="/branding/Nx.png" alt="Logo de Nexo" />
                 <p>Nexo</p>
             </div>
         </a>
-        <div class="nav-login-buttoms-container">
-            <div class="nav-price-button-container nav-button">
+        <div class="login-buttons-container">
+            <div class="price-button button">
                 <a href="/index.html">Precio</a>
             </div>
-            <div class="nav-login-button-container nav-button">
+            <div class="login-button button">
                 <a href="/index.html">Iniciar sesión</a>
             </div>
         </div>
@@ -23,11 +23,11 @@
 </div>
 
 <style>
-    .nav-placeholder {
+    .placeholder {
         height: 70px;
     }
 
-    .nav-container {
+    .container {
         width: 100%;
         height: 70px;
         background-color: #4b164c;
@@ -40,7 +40,7 @@
         z-index: 1000;
     }
 
-    .nav-items-container {
+    .items-container {
         height: 100%;
         width: 70%;
         display: flex;
@@ -48,7 +48,7 @@
         user-select: none;
     }
 
-    .nav-brand-container {
+    .brand-container {
         height: 100%;
         width: fit-content;
         display: flex;
@@ -63,18 +63,18 @@
         }
     }
 
-    .nav-brand-container img {
+    .brand-container img {
         height: 100%;
     }
 
-    .nav-login-buttoms-container {
+    .login-buttons-container {
         width: fit-content;
         display: flex;
         align-items: center;
         gap: 10px;
     }
 
-    .nav-button {
+    .button {
         height: 50%;
         width: 150px;
         background-color: #dc7fcc;
@@ -85,11 +85,11 @@
         cursor: pointer;
     }
 
-    .nav-button:hover {
+    .button:hover {
         background-color: #ffcbfa;
     }
 
-    .nav-button a {
+    .button a {
         color: black;
         font-weight: bold;
     }
