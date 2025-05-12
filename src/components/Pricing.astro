@@ -1,0 +1,259 @@
+---
+
+---
+
+<div class="pricing-container">
+    <div class="pricing-plan1-container p1">
+        <h1>Plan Básico</h1>
+        <h4><span style="font-size: 25px;">Gratis</span></h4>
+        <p>para siempre</p>
+        <div class="plan1">
+            <a href="index.html">Elegir plan</a>
+        </div>
+        <p>
+            <strong>Ideal para:</strong> Usuarios que buscan una solución sencilla
+            y funcional para organizar sus tareas personales.
+        </p>
+        <ul class="tics-list">
+            <li>Creación y gestión de tareas ilimitadas.</li>
+            <li>Listas y recordatorios básicos.</li>
+            <li>Sincronización en un solo dispositivo.</li>
+            <li>Acceso a plantillas básicas.</li>
+            <li>Soporte comunitario.</li>
+        </ul>
+    </div>
+    <div class="pricing-plan2-container p2">
+        <div class="vendido">
+            <p>Más vendido</p>
+        </div>
+        <h1>Plan Plus</h1>
+        <h4><span style="font-size: 28px;">1,99 €/mes</span></h4>
+        <p>(con 7 días de prueba gratuita)</p>
+        <div class="plan2">
+            <a href="index.html">Elegir plan</a>
+        </div>
+        <p>
+            <strong>Ideal para:</strong> Usuarios que desean funciones adicionales
+            para mejorar su productividad sin un gran desembolso.
+        </p>
+        <ul class="tics-list">
+            <li>Todo lo incluido en el Plan Básico.</li>
+            <li>Sincronización entre múltiples dispositivos.</li>
+            <li>Etiquetas y filtros personalizados.</li>
+            <li>Recordatorios avanzados y notificaciones inteligentes.</li>
+            <li>
+                Integración con calendarios externos (Google Calendar, Outlook).
+            </li>
+            <li>Acceso anticipado a nuevas funciones.</li>
+            <li>Soporte por correo electrónico prioritario.</li>
+        </ul>
+    </div>
+    <div class="pricing-plan3-container p3">
+        <h1>Plan Premium</h1>
+        <h4><span style="font-size: 25px;">4,99 €/mes</span></h4>
+        <p>(o 49,99 €/año)</p>
+        <div class="plan3">
+            <a href="index.html">Elegir plan</a>
+        </div>
+        <p>
+            <strong>Ideal para:</strong> Profesionales, equipos y usuarios avanzados
+            que buscan una solución completa y personalizada.
+        </p>
+        <ul class="tics-list">
+            <li>Todo lo incluido en el Plan Plus.</li>
+            <li>Colaboración en tiempo real con equipos.</li>
+            <li>Automatización de tareas y flujos de trabajo.</li>
+            <li>Informes y análisis de productividad.</li>
+            <li>Almacenamiento en la nube para archivos adjuntos.</li>
+            <li>Soporte personalizado 24/7.</li>
+        </ul>
+    </div>
+</div>
+
+<style>
+    .pricing-container {
+        width: 100%;
+        height: 1%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        color: #4b164c;
+        margin-top: 200px;
+        margin-bottom: 100px;
+
+        & .tics-list {
+            list-style: none;
+
+            & li::before {
+                content: "✓";
+                color: green;
+                margin-right: 5px;
+            }
+        }
+    }
+
+    .pricing-container .p1 {
+        width: 20%;
+        height: fit-content;
+        padding-inline: 10px;
+        border-radius: 10px;
+        border: 3px solid #dd88cf;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & p {
+            margin-top: 0;
+        }
+
+        & p:nth-of-type(2) {
+            font-size: 16px;
+            text-align: left;
+            margin: 20px;
+        }
+
+        & h4 {
+            margin: 0;
+        }
+
+        & .plan1 {
+            width: fit-content;
+            height: fit-content;
+            border: 2px solid #dd88cf;
+            padding: 10px;
+            border-radius: 10px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #4b164c;
+                border: 2px solid #4b164c;
+
+                & a {
+                    color: white;
+                    font-weight: bold;
+                }
+            }
+
+            & a {
+                color: #4b164c;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .pricing-container .p2 {
+        width: 20%;
+        height: fit-content;
+        border: 3px solid #863187;
+        padding-inline: 10px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & p {
+            margin-top: 0;
+        }
+
+        & p:nth-of-type(2) {
+            font-size: 16px;
+            text-align: left;
+            margin: 20px;
+        }
+
+        & h4 {
+            margin: 0;
+        }
+
+        & .vendido {
+            width: 100%;
+            height: 40px;
+            background-color: #4b164c;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom-left-radius: 100%;
+            border-bottom-right-radius: 100%;
+            & p {
+                color: white;
+                font-size: 25px;
+            }
+        }
+
+        & .plan2 {
+            width: fit-content;
+            height: fit-content;
+            background-color: #4b164c;
+            border: 2px solid #4b164c;
+            padding: 10px;
+            border-radius: 10px;
+            cursor: pointer;
+
+            &:hover {
+                border: 2px solid #dd88cf;
+                background-color: transparent;
+                padding: 10px;
+
+                & a {
+                    color: #4b164c;
+                    font-weight: bold;
+                }
+            }
+
+            & a {
+                color: white;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .pricing-container .p3 {
+        width: 20%;
+        height: fit-content;
+        padding-inline: 10px;
+        border-radius: 10px;
+        border: 3px solid #dd88cf;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & p {
+            margin-top: 0;
+        }
+
+        & p:nth-of-type(2) {
+            font-size: 16px;
+            text-align: left;
+            margin: 20px;
+        }
+
+        & h4 {
+            margin: 0;
+        }
+
+        & .plan3 {
+            width: fit-content;
+            height: fit-content;
+            border: 2px solid #dd88cf;
+            padding: 10px;
+            border-radius: 10px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #4b164c;
+                border: 2px solid #4b164c;
+
+                & a {
+                    color: white;
+                    font-weight: bold;
+                }
+            }
+
+            & a {
+                color: #4b164c;
+                font-weight: bold;
+            }
+        }
+    }
+</style>
