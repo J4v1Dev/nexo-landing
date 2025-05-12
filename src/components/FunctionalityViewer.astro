@@ -1,0 +1,172 @@
+---
+
+---
+
+<script>
+    const buttons: NodeListOf<HTMLElement> = document.querySelectorAll(
+        ".functionality-viewer-button",
+    );
+    const functionalities: NodeListOf<HTMLElement> = document.querySelectorAll(
+        ".functionality-viewer-functionality",
+    );
+
+    functionalities[0].style.display = "block";
+
+    buttons.forEach((button, index) => {
+        button.addEventListener("click", () => {
+            buttons.forEach((b) => b.classList.remove("active"));
+            button.classList.add("active");
+            functionalities.forEach((func, funcIndex) => {
+                func.style.display = index === funcIndex ? "block" : "none";
+            });
+        });
+    });
+</script>
+
+<div class="functionality-viewer-container">
+    <div class="functionality-viewer-container-box">
+        <div class="functionality-viewer-buttons-container">
+            <div
+                id="functionality-viewer-button1"
+                class="functionality-viewer-button"
+            >
+                <p>Funcionalidad 1</p>
+            </div>
+            <div
+                id="functionality-viewer-button2"
+                class="functionality-viewer-button"
+            >
+                <p>Funcionalidad 2</p>
+            </div>
+            <div
+                id="functionality-viewer-button3"
+                class="functionality-viewer-button"
+            >
+                <p>Funcionalidad 3</p>
+            </div>
+        </div>
+        <div class="functionality-viewer-dividor"></div>
+        <div class="functionality-viewer-funcionality-container">
+            <div
+                id="functionality-viewer-functionality1"
+                class="functionality-viewer-functionality"
+            >
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Odio rem dolorem saepe eius tempora nobis rerum aliquid
+                    similique in, velit quod libero doloremque officia hic
+                    consequatur molestias repellat amet nam.
+                </p>
+            </div>
+            <div
+                id="functionality-viewer-functionality2"
+                class="functionality-viewer-functionality"
+            >
+                <img src="/images/no-image.jpg" alt="no-image" />
+            </div>
+            <div
+                id="functionality-viewer-functionality3"
+                class="functionality-viewer-functionality"
+            >
+                <h1>Container 3</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .functionality-viewer-container {
+        display: flex;
+        justify-content: center;
+        padding: 300px 40px 300px 40px;
+        background-image: linear-gradient(
+                #f5f5f5 0 10%,
+                #f5f5f5c3 20% 80%,
+                #f5f5f5 90% 100%
+            ),
+            url("/images/meeting2.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+
+    .functionality-viewer-container-box {
+        height: 300px;
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .functionality-viewer-buttons-container {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .functionality-viewer-funcionality-container {
+        width: 80%;
+        height: 100%;
+        background-color: #ffff;
+        border-radius: 50px;
+    }
+
+    .functionality-viewer-button {
+        width: 90%;
+        height: 30%;
+        background-color: #ffff;
+        border-radius: 20px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .functionality-viewer-button.active {
+        background: linear-gradient(270deg, #ffff 97%, #a030a1 3%);
+        box-shadow: 3px 3px 3px #3b3b3b;
+    }
+
+    .functionality-viewer-button:hover {
+        background: linear-gradient(270deg, #ffff 97%, #a030a1 3%);
+        box-shadow: 3px 3px 3px #3b3b3b;
+        transition: 0.3s;
+    }
+
+    .functionality-viewer-button p {
+        color: #4b164c;
+        font-weight: bold;
+        font-size: large;
+    }
+
+    .functionality-viewer-functionality {
+        height: 100%;
+        width: 100%;
+        display: none;
+        border-radius: 50px 0 0 50px;
+        text-align: justify;
+        color: #4b164c;
+
+        & p {
+            padding: 30px;
+        }
+
+        & img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50px;
+        }
+    }
+
+    .functionality-viewer-dividor {
+        border-left: 2px solid #4b164c3b;
+        height: 100%;
+        border-radius: 100%;
+        margin-right: 20px;
+    }
+</style>
