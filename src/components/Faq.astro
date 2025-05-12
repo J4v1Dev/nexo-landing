@@ -1,0 +1,114 @@
+---
+
+---
+
+<div class="container">
+    <h1>Preguntas frecuentes</h1>
+
+    <details class="faq-details" name="faq">
+        <summary class="faq-summary"
+            >¿Es esta acaso la primera de las preguntas?</summary
+        >
+        <div class="divisory-line"></div>
+        <div class="summary-content">
+            <p>Sí</p>
+        </div>
+    </details>
+
+    <details class="faq-details" name="faq">
+        <summary class="faq-summary"
+            >¡Repampanos! ¿Es esta, a dios vista, la segunda de las cuestiones?</summary
+        >
+        <div class="divisory-line"></div>
+        <div class="summary-content">
+            <p>Sí</p>
+        </div>
+    </details>
+
+    <details class="faq-details" name="faq">
+        <summary class="faq-summary"
+            >¡Cáspita! ¿Cuantas veces habré de ser cuestionado? Aquesta es la
+            tercera de las preguntas</summary
+        >
+        <div class="divisory-line"></div>
+        <div class="summary-content">
+            <p>Afirmativo</p>
+        </div>
+    </details>
+
+    <details class="faq-details" name="faq">
+        <summary class="faq-summary"
+            >¡Oh, laberintos del pensamiento y recovecos de la duda! ¿Acaso mi
+            humilde persona, cual peregrino desorientado en la vastedad del
+            erial, ha alcanzado ya el augusto sitial de ser la cuarta
+            interrogante?</summary
+        >
+        <div class="divisory-line"></div>
+        <div class="summary-content">
+            <p>
+                ¡En verdad, así es! Cual meridiano traza su imperturbable
+                sendero en la esfera celeste, así mi humilde presencia se erige,
+                sin lugar a equívoco, como la cuarta cuestión que vuestra aguda
+                mente ha tenido a bien suscitar en este provechoso intercambio
+                de pareceres.
+            </p>
+        </div>
+    </details>
+</div>
+
+<style>
+    .container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        font-size: 20px;
+
+        & h1 {
+            color: #4b164c;
+            font-weight: bold;
+            margin-bottom: 20px;
+            margin-top: 100px;
+            font-family: "Montserrat", sans-serif;
+        }
+    }
+
+    .faq-details {
+        width: 60%;
+        padding: 0.5rem;
+    }
+
+    .faq-details[open] .faq-summary::before {
+        content: "-";
+    }
+
+    .divisory-line {
+        border-top: 2px solid #b6b6b6;
+        margin: 0.2rem 0;
+        width: 95%;
+        margin-left: 2.5%;
+        border-radius: 100%;
+    }
+
+    .faq-summary {
+        list-style: none;
+        cursor: pointer;
+        background-color: #4b164c;
+        color: #ffff;
+        padding: 10px;
+        border-radius: 10px;
+        font-weight: bold;
+    }
+
+    .faq-summary::before {
+        content: "+";
+        padding-right: 1rem;
+    }
+
+    .summary-content {
+        background-color: #fdd4f765;
+        padding: 10px;
+        border-radius: 10px;
+        width: 95%;
+        margin-left: 1.5%;
+    }
+</style>
