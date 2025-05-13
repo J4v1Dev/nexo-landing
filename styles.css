@@ -219,58 +219,6 @@ a {
         }
     }
 }
-/*
-.start2-container {
-    width: 100%;
-    height: 1%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    margin-top: 100px;
-    font-size: 30px;
-    gap: 100px;
-}
-
-.start2-container .start2-free-container{
-    width: fit-content;
-    height: 80px;
-    background-color: #dc6eca;
-    border: 2px solid #DD88CF;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-left: 30px;
-    padding-right: 30px;
-    border-radius: 7px;
-    cursor: pointer;
-    color: white;
-    font-weight: bold;
-
-}
-
-.start2-container .start2-price-container{
-    width: fit-content;
-    height: 80px;
-    border: 2px solid #DD88CF;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-left: 30px;
-    padding-right: 30px;
-    border-radius: 7px;
-    cursor: pointer;
-    color: #4B164C;
-    font-weight: bold;
-}
-
-.start2-container .start2-price-container:hover{
-
-}
-
-.start2-container .start2-free-container:hover{
-
-}*/
 .start2-container {
     width: 100%;
     height: 30vh;
