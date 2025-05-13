@@ -229,8 +229,9 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 100px;
     margin-bottom: 100px;
+    font-size: 30px;
 }
 
 .start2-container .start2-free-container{
