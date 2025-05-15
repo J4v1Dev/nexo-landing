@@ -1,0 +1,53 @@
+---
+import FaqQuestion from "./FaqQuestion.astro";
+---
+
+<div class="container">
+    <h1>Preguntas frecuentes</h1>
+
+    <FaqQuestion
+        question="¿Es esta acaso la primera de las preguntas?"
+        answer="Sí"
+    />
+
+    <FaqQuestion
+        question="¡Repampanos! ¿Es esta, a dios vista, la segunda de las cuestiones?"
+        answer="Sí"
+    />
+
+    <FaqQuestion
+        question="¡Cáspita! ¿Cuantas veces habré de ser cuestionado? Aquesta es la tercera de las preguntas"
+        answer="Afirmativo"
+    />
+
+    <FaqQuestion
+        question="¡Oh, laberintos del pensamiento y recovecos de la duda! ¿Acaso mi humilde persona, cual peregrino desorientado en la vastedad del erial, ha alcanzado ya el augusto sitial de ser la cuarta interrogante?"
+        answer="¡En verdad, así es! Cual meridiano traza su imperturbable sendero en la esfera celeste, así mi humilde presencia se erige, sin lugar a equívoco, como la cuarta cuestión que vuestra aguda mente ha tenido a bien suscitar en este provechoso intercambio de pareceres."
+    />
+</div>
+
+<style>
+    .container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        font-size: 20px;
+        padding: 200px 40px 300px 40px;
+        background-image: linear-gradient(
+                #f5f5f5 0 10%,
+                #f5f5f5c3 20% 80%,
+                #f5f5f5 90% 100%
+            ),
+            url("/images/custom-service.jpg");
+        background-size: cover;
+        background-position: center;
+
+        & h1 {
+            color: #4b164c;
+            font-weight: bold;
+            margin-bottom: 20px;
+            margin-top: 100px;
+            font-family: "Montserrat", sans-serif;
+        }
+    }
+</style>
