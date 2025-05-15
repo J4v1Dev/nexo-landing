@@ -64,8 +64,9 @@ a {
 }
 
 .nav-button {
-    height: 50%;
-    width: 150px;
+    height: 70%;
+    width: 180px;
+    font-size: 18px;
     background-color: #dc7fcc;
     border-radius: 50px;
     display: flex;
