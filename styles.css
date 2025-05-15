@@ -125,98 +125,204 @@ a {
 
 .start1-container {
     width: 100%;
-    height: 10vh;
+    height: 30vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 100px;
     margin-bottom: 100px;
+    font-size: 30px;
 }
 
 .start1-container .start1-free-container{
-    width: fit-content;
-    height: 80px;
-    background-color: #dc6eca;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 250px;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 20px 0px;
+    overflow: hidden;
+    background-color: #7d1c7f;
+    border: 2px solid #7d1c7f;
     padding-left: 30px;
     padding-right: 30px;
     border-radius: 7px;
     cursor: pointer;
     color: white;
     font-weight: bold;
+    transition: all 0.2s linear 0s;
+  
+    &:before {
+        content: "\f054";
+        font-family: FontAwesome;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        left: 0px;
+        height: 100%;
+        width: 30px;
+        transform: scale(0,1);
+        transform-origin: left center;
+        transition: all 0.2s linear 0s;
+    }
+    
+    &:hover {
+        text-indent: 30px;
+        
+        &:before {
+        transform: scale(1,1);
+        text-indent: 0;
+        }
+    }
 }
 
 .start1-container .start1-price-container{
-    width: fit-content;
-    height: 80px;
-    border: 2px solid #DD88CF;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 300px;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 20px 0px;
+    overflow: hidden;
+    border: 2px solid #7d1c7f;
     padding-left: 30px;
     padding-right: 30px;
     border-radius: 7px;
     cursor: pointer;
-    color: #4B164C;
+    color: #7d1c7f;
     font-weight: bold;
+    transition: all 0.2s linear 0s;
+  
+    &:before {
+        content: "\f054";
+        font-family: FontAwesome;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        left: 0px;
+        height: 100%;
+        width: 30px;
+        background-color: rgba(white,0.3);
+        border-radius: 0 50% 50% 0;
+        transform: scale(0,1);
+        transform-origin: left center;
+        transition: all 0.2s linear 0s;
+    }
+    
+    &:hover {
+        text-indent: 30px;
+        
+        &:before {
+        transform: scale(1,1);
+        text-indent: 0;
+        }
+    }
 }
-
-.start1-container .start1-price-container:hover{
-    background-color: #ffb7f7;
-}
-
-.start1-container .start1-free-container:hover{
-    background-color: #ffb7f7;
-}
-
 .start2-container {
     width: 100%;
-    height: 1%;
+    height: 30vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 100px;
+    font-size: 30px;
 }
 
 .start2-container .start2-free-container{
-    width: fit-content;
-    height: 80px;
-    background-color: #dc6eca;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 250px;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 20px 0px;
+    overflow: hidden;
+    background-color: #7d1c7f;
+    border: 2px solid #7d1c7f;
     padding-left: 30px;
     padding-right: 30px;
     border-radius: 7px;
     cursor: pointer;
     color: white;
     font-weight: bold;
-
+    transition: all 0.2s linear 0s;
+  
+    &:before {
+        content: "\f054";
+        font-family: FontAwesome;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        left: 0px;
+        height: 100%;
+        width: 30px;
+        transform: scale(0,1);
+        transform-origin: left center;
+        transition: all 0.2s linear 0s;
+    }
+    
+    &:hover {
+        text-indent: 30px;
+        
+        &:before {
+        transform: scale(1,1);
+        text-indent: 0;
+        }
+    }
 }
 
 .start2-container .start2-price-container{
-    width: fit-content;
-    height: 80px;
-    border: 2px solid #DD88CF;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 300px;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 20px 0px;
+    overflow: hidden;
+    border: 2px solid #7d1c7f;
     padding-left: 30px;
     padding-right: 30px;
     border-radius: 7px;
     cursor: pointer;
-    color: #4B164C;
+    color: #7d1c7f;
     font-weight: bold;
-}
-
-.start2-container .start2-price-container:hover{
-    background-color: #ffb7f7;
-}
-
-.start2-container .start2-free-container:hover{
-    background-color: #ffb7f7;
+    transition: all 0.2s linear 0s;
+  
+    &:before {
+        content: "\f054";
+        font-family: FontAwesome;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        left: 0px;
+        height: 100%;
+        width: 30px;
+        background-color: rgba(white,0.3);
+        border-radius: 0 50% 50% 0;
+        transform: scale(0,1);
+        transform-origin: left center;
+        transition: all 0.2s linear 0s;
+    }
+    
+    &:hover {
+        text-indent: 30px;
+        
+        &:before {
+        transform: scale(1,1);
+        text-indent: 0;
+        }
+    }
 }
 
 /* FAQ */
@@ -393,7 +499,6 @@ button{
         width: 100%;
         height: 40px;
         background-color: #4B164C;
-        display: flex;
         justify-content: center;
         align-items: center;
         border-bottom-left-radius: 100%;
@@ -401,6 +506,8 @@ button{
         & p{
             color: white;
             font-size: 25px;
+            text-align: center;
+            margin-top: 3px;
         }
     }
 
@@ -748,12 +855,15 @@ button{
     border-radius: 50%;
     align-content: center;
     text-align: center;
-    font-size: 25px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #F5F5F5;
     cursor: pointer;
-    transition: opacity 0.3s ease;
-    border: #4B164C solid 1px;
+    border-style: solid;
+    border-width: 3px;
+    transition: all 0.2s linear;
 }
 
 .goUpButton:hover {
-    background-color: #ffcbfa;
+    background-color: #4B164C;
 }
