@@ -3,72 +3,65 @@
 ---
 
 <script>
+    import Swiper from "swiper";
+
     const buttons: NodeListOf<HTMLElement> = document.querySelectorAll(
         ".functionality-viewer-button",
     );
-    const functionalities: NodeListOf<HTMLElement> = document.querySelectorAll(
-        ".functionality-viewer-functionality",
-    );
+    const functionalitySwiper = new Swiper(".functionality-swiper", {
+        direction: "horizontal",
+        loop: false,
+        allowTouchMove: true,
+        slidesPerView: 1,
+        spaceBetween: 30,
+        speed: 600,
+    });
 
-    functionalities[0].style.display = "block";
+    buttons[0].classList.add("active");
 
     buttons.forEach((button, index) => {
         button.addEventListener("click", () => {
             buttons.forEach((b) => b.classList.remove("active"));
             button.classList.add("active");
-            functionalities.forEach((func, funcIndex) => {
-                func.style.display = index === funcIndex ? "block" : "none";
-            });
+            functionalitySwiper.slideTo(index);
         });
+    });
+
+    functionalitySwiper.on("slideChange", () => {
+        buttons.forEach((b) => b.classList.remove("active"));
+        buttons[functionalitySwiper.activeIndex].classList.add("active");
     });
 </script>
 
 <div class="functionality-viewer-container">
     <div class="functionality-viewer-container-box">
         <div class="functionality-viewer-buttons-container">
-            <div
-                id="functionality-viewer-button1"
-                class="functionality-viewer-button"
-            >
+            <div class="functionality-viewer-button" data-index="0">
                 <p>Funcionalidad 1</p>
             </div>
-            <div
-                id="functionality-viewer-button2"
-                class="functionality-viewer-button"
-            >
+            <div class="functionality-viewer-button" data-index="1">
                 <p>Funcionalidad 2</p>
             </div>
-            <div
-                id="functionality-viewer-button3"
-                class="functionality-viewer-button"
-            >
+            <div class="functionality-viewer-button" data-index="2">
                 <p>Funcionalidad 3</p>
             </div>
         </div>
+
         <div class="functionality-viewer-dividor"></div>
-        <div class="functionality-viewer-funcionality-container">
-            <div
-                id="functionality-viewer-functionality1"
-                class="functionality-viewer-functionality"
-            >
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Odio rem dolorem saepe eius tempora nobis rerum aliquid
-                    similique in, velit quod libero doloremque officia hic
-                    consequatur molestias repellat amet nam.
-                </p>
-            </div>
-            <div
-                id="functionality-viewer-functionality2"
-                class="functionality-viewer-functionality"
-            >
-                <img src="/images/no-image.jpg" alt="no-image" />
-            </div>
-            <div
-                id="functionality-viewer-functionality3"
-                class="functionality-viewer-functionality"
-            >
-                <h1>Container 3</h1>
+        <div
+            class="swiper functionality-swiper functionality-viewer-funcionality-container"
+        >
+            <div class="swiper-wrapper">
+                <div class="swiper-slide functionality-viewer-functionality">
+                    <img src="/images/no-image.jpg" alt="no-image" />
+                </div>
+                <div class="swiper-slide functionality-viewer-functionality">
+                    <img src="/images/no-image.jpg" alt="no-image" />
+                </div>
+                <div class="swiper-slide functionality-viewer-functionality">
+                    <!-- <img src="/images/no-image.jpg" alt="no-image" /> -->
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, consequuntur deserunt? Provident similique doloribus cupiditate odio illo sed ut enim. Minus officia illo quod praesentium, iste sapiente hic eaque deleniti.</p>
+                </div>
             </div>
         </div>
     </div>
@@ -111,7 +104,6 @@
     .functionality-viewer-funcionality-container {
         width: 80%;
         height: 100%;
-        background-color: #ffff;
         border-radius: 50px;
     }
 
@@ -146,20 +138,20 @@
     .functionality-viewer-functionality {
         height: 100%;
         width: 100%;
-        display: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         border-radius: 50px 0 0 50px;
         text-align: justify;
         color: #4b164c;
-
-        & p {
-            padding: 30px;
-        }
 
         & img {
             width: 100%;
             height: 100%;
             object-fit: cover;
-            border-radius: 50px;
+            border-radius: 30px;
+            transition: 0.3s;
+            cursor: pointer;
         }
     }
 
@@ -168,5 +160,16 @@
         height: 100%;
         border-radius: 100%;
         margin-right: 20px;
+    }
+
+    .swiper {
+        width: 100%;
+        height: 100%;
+    }
+
+    .swiper-slide {
+        width: 100%;
+        height: 100%;
+        border-radius: 50px;
     }
 </style>
